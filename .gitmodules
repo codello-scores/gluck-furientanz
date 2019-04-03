@@ -1,0 +1,3 @@
+[submodule "lilylib"]
+	path = lilylib
+	url = ../LilyLib
