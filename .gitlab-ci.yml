@@ -1,0 +1,12 @@
+image: registry.gitlab.com/lilypond-projects/lilylib:lilypond-2.19.80
+
+variables:
+    GIT_SUBMODULE_STRATEGY: normal
+
+build:
+    script:
+        - make
+    artifacts:
+        paths:
+            - "Cello.pdf"
+            - "Violin1.pdf"
