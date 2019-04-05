@@ -1,19 +1,21 @@
 \version "2.19.65"
 
-dinPaper = ##f
+twoside = ##f
 \include "lilylib/pdq.ily"
 
 \header {
     title = "Furientanz"
     subtitle = "aus der Oper \"Orfeo ed Euridice\""
     composer = "C.W. Gluck"
-    instrument = "Violoncello"
+    instrument = "Violoncello & Bass"
     copyright = "© Kim Wittenburg 2019"
 }
 
 \layout {
     \partLayout
 }
+
+\pointAndClickOn
 
 Cello = \new Voice { \relative c {
     \clef bass \key d \minor \time 3/4 | %1
@@ -35,29 +37,29 @@ Cello = \new Voice { \relative c {
     \repeat unfold 4 {
         b, b' b b b b |
     }
-    a a a a a a |
-    g! g g g g g |
-    f f f f f f |
-    e e e e e e |
-    dis dis dis dis dis dis |
-    dis fis16 g a8 a16 b c8 b16 a |
+    a2.:8 |
+    g!: |
+    f: |
+    e: |
+    dis: |
+    dis8 fis16 g a8 a16 b c8 b16 a |
     gis8 d! d d d d |
     cis cis cis cis cis cis |
     cis e16 f g8 g16 a bes8 a16 g |
     fis8 c c c c c |
     b b' b b b b |
-    a a a a a a |
-    gis b16 c d8 c16 b c8 b16 a |
+    a2.:8 |
+    gis8 b16 c d8 c16 b c8 b16 a |
     gis8 e\p e e e e |
-    e\ff e e e e e |
-    e b'16 c d8 c16 b c8 b16 a |
+    e2.:8\ff |
+    e8 b'16 c d8 c16 b c8 b16 a |
     fis8 e\p e e e e |
-    e\ff e e e e e |
-    e e e e e e | 
-    dis fis16 gis a8 a16 b c8 b16 a |
+    e2.:8\ff |
+    e: |
+    dis8 fis16 gis a8 a16 b c8 b16 a |
     gis8 e e e e e |
     e2 r4 |
-    a\p c a | 
+    a\p c a |
     gis\< b e, |
     a c a |
     d b gis |
@@ -94,26 +96,26 @@ Cello = \new Voice { \relative c {
     \repeat unfold 2 {
         a e'16 f g8 f16 e f8 e16 d |
         cis8 a\p a a a a |
-        a\f a a a a a |
+        a2.:8\f |
     }
-    a a a a a a |
+    a2.:8 |
     gis8 gis16 a b8 b16 cis d8 cis16 b |
     cis8 a a a a a |
     a2 r4 |
 
-    d16\ff d d d f f f f d d d d |
-    cis cis cis cis e e e e a, a a a |
-    d d d d f f f f d d d d |
-    g g g g e e e e cis cis cis cis |
-    d d d d f f f f a, a a a |
-    bes bes bes bes d d d d a a a a |
-    gis gis gis gis e' e e e gis, gis gis gis |
-    a a a a f' f f f a, a a a |
-    gis gis gis gis e' e e e gis, gis gis gis |
-    g! g g g e' e e e g, g g g |
-    f f f f d' d d d f, f f f |
-    cis cis cis cis a' a a a cis, cis cis cis |
-    d\ff d' c bes a g f e d8 d |
+    d4:16\ff f: d: |
+    cis: e: a,: |
+    d: f: d: |
+    g: e: cis: |
+    d: f: a,: |
+    bes: d: a: |
+    gis: e': gis,: |
+    a: f': a,: |
+    gis: e': gis,: |
+    g!: e': g,: |
+    f: d': f,: |
+    cis: a': cis,: |
+    d16\ff d' c bes a g f e d8 d |
     g16 g' f e d c bes a g8 g |
     c,16 c' bes a g f e d c8 c |
     f16 f' e d c bes a g f8 f |
@@ -121,15 +123,15 @@ Cello = \new Voice { \relative c {
     e16 e' d c bes a g f e8 e |
     a, a' a a bes b |
     c c\p c c c c |
-    c\f c c c c c |
-    c b16 c g c d c bes a g f |
+    c2.:8\f |
+    c8 b16 c g c d c bes a g f |
     e8 c'\p c c c c |
-    c\f c c c c c |
-    c e, e e e e |
+    c2.:8\f |
+    c8 e, e e e e |
     f,16 f' e f g f e f g f e f |
     a,8 a' a a a a |
     bes,16 bes' a bes c bes a bes c bes a bes |
-    fis8 fis fis fis fis fis |
+    fis2.:8 |
     g,16 g' fis g a g fis g a g fis g |
     \repeat unfold 2 {
         d8 d'-!\p bes-! d-! g,-! d'-! |
@@ -139,44 +141,44 @@ Cello = \new Voice { \relative c {
     }
     d,\f a'16 bes c8 bes16 a bes8 a16 g |
     fis8 d\p d d d d |
-    d\f d d d d d |
-    d a'16 bes c8 bes16 a bes8 a16 g |
+    d2.:8\f |
+    d8 a'16 bes c8 bes16 a bes8 a16 g |
     fis8 d'\p d d d d |
-    c\f c c c c c |
-    bes bes16 c d8 c16 bes c8 bes16 a |
+    c2.:8\f |
+    bes8 bes16 c d8 c16 bes c8 bes16 a |
     bes8 g\p g g g g |
-    f!\f f f f f f |
+    f!2.:8\f |
     es8 es16 f g8 f16 es f8 es16 d |
     es8 c\p c c c c |
-    g'\f g g g g g |
-    fis fis16 g a8 g16 fis g8 fis16 e!16 |
+    g'2.:8\f |
+    fis8 fis16 g a8 g16 fis g8 fis16 e!16 |
     fis8 d\p d d d d |
-    a'\f a a a a a |
-    gis gis16 a b8 a16 gis a8 gis16 fis |
+    a'2.:8\f |
+    gis8 gis16 a b8 a16 gis a8 gis16 fis |
     gis8 e\p e e e e |
-    e\f e e e e e |
-    e a-! gis-! a-! gis-! fis-! |
+    e2.:8\f |
+    e8 a-! gis-! a-! gis-! fis-! |
     e2 r4 |
 
-    a16\p a a a  c c c c a a a a |
-    gis gis gis gis b\cresc b b b e, e e e |
-    a a a a c c c c a a a a |
-    d\ff d d d b b b b gis gis gis gis |
-    a a a a c c c c e, e e e |
-    f f f f a a a a e e e e |
-    dis dis dis dis b' b b b dis, dis dis dis |
-    e e e e c' c c c e, e e e |
-    dis dis dis dis b' b b b dis, dis dis dis |
-    d! d d d b' b b b d, d d d |
-    cis cis cis cis a' a a a cis, cis cis cis |
-    c! c c c a' a a a c, c c c |
-    b b b b g' g g g b, b b b |
-    bes! bes bes bes g' g g g bes, bes bes bes |
+    a4:16\p c: a: |
+    gis: b:\cresc e,: |
+    a: c: a: |
+    d:\ff b: gis: |
+    a: c: e,: |
+    f: a: e: |
+    dis: b': dis,: |
+    e: c': e,: |
+    dis: b': dis,: |
+    d!: b': d,: |
+    cis: a': cis,: |
+    c!: a': c,: |
+    b: g': b,: |
+    bes!: g': bes,: |
     \repeat unfold 4 {
-    a a' a a a a a a a a a a |
+    a16 a' a a a4:16 a4:16 |
     }
     \repeat unfold 4 {
-    g g g g g g g g g g g g
+      g2.:16 |
     }
     g4 r8 e-! g-! cis-! |
     e-! bes-! e-! g,-! e'-! e,-! |
@@ -185,11 +187,11 @@ Cello = \new Voice { \relative c {
     g''-! e-! g-! cis,-! g'-! bes,-! |
     g2 r4 |
     r1*3/4\fermata |
-    
+
     << {
-        d16\ff d d d d d d d d d d d |
+        d2.:16\ff |
         \repeat unfold 7 {
-            d d d d d d d d d d d d
+            d:
         }
     }
     {
@@ -210,18 +212,16 @@ Cello = \new Voice { \relative c {
     a a' g f e f e d cis d cis bes |
     a d'\p f e d e d c bes c bes a |
     gis d' f e d e d c b c b a |
-    \repeat unfold 2 {
-        gis gis gis gis gis gis gis gis gis gis gis gis
-    }
-    a\>_\markup "smorz." a a a a a a a a a a a |
+    gis2.:16 |
+    gis:
+    a:\>_\markup "smorz." |
     << {
-        \repeat unfold 2 {
-            d, d d d d d d d d d d d |
-        }
-        d d d d\! d d d d d d d d
-        \repeat unfold 3 {
-            d d d d d d d d d d d d |
-        }
+        d,: |
+        d: |
+        d:\! |
+        d: |
+        d: |
+        d: |
     }
     {
         \hide MultiMeasureRest

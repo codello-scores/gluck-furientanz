@@ -1,6 +1,6 @@
 \version "2.19.65"
 
-dinPaper = ##f
+twoside = ##f
 \include "lilylib/pdq.ily"
 
 \header {
@@ -15,11 +15,13 @@ dinPaper = ##f
     \partLayout
 }
 
+\pointAndClickOn
+
 Violin = \new Voice { \relative c' {
     \clef treble \key d \minor \time 3/4 | %1
     \tempo "Vivement"
-	d:16\p f: d: |
-	cis: e: a,: |
+        d16\p d d d f f f f d d d d |
+	cis4:16 e: a,: |
 	d: f: d: |
 	g:\cresc e: cis: |
 	d: f: a: |
@@ -58,14 +60,14 @@ Violin = \new Voice { \relative c' {
 	gis8-! b-! e,-! gis-! b,-! e-! |
 	gis,2 r4 |
 
-	a'4:16\p c: a: |
-	gis:\< b: e,: |
-	a: c: a: |
+        a'16\p a a a c c c c a a a a |
+	gis4:16 b: e,: |
+	a:\cresc c: a: |
 	d: b: gis: |
-	a:\f c: e: |
+	a:\< c: e: |
 	f: a: e: |
-	dis: bes': dis,: |
-	e: c': e,: |
+	dis:\f bes': dis,: |
+	e:\cresc c': e,: |
 	dis: b': dis,: |
 	d!: b': d,: |
 	cis: bes'!: cis,: |
@@ -116,12 +118,12 @@ Violin = \new Voice { \relative c' {
 	a d cis d a' d, cis d a d cis d |
 	a e' dis e a e dis e a, e' dis e |
 	<f a,>16\ff \repeat unfold 11 { <f a,> } |
-	\repeat unfold 12 { <f bes,> } |
-	\repeat unfold 12 { <e bes> } |
-	\repeat unfold 12 { <e a,> } |
-	\repeat unfold 12 { <d a> } |
-	\repeat unfold 12 { <d g,> } |
-	c g f e f c' d c bes a g f |
+	<f bes,>2.:16 |
+	<e bes>2.: |
+	<e a,>2.: |
+	<d a>2.: |
+	<d g,>2.: |
+	c16 g f e f c' d c bes a g f |
 	e8 c\p c c c c |
 	<f' d>2.\f |
 	e16 c b c g c d c bes a g f |
@@ -206,14 +208,16 @@ Violin = \new Voice { \relative c' {
         d d' c bes a bes a g f g f e |
         d a' g f e f e d cis d cis bes |
         a a' g f e f e d cis d cis bes |
-        a <d f>\p \repeat unfold 34 { <d f> } |
-        \repeat unfold 12 { <d e> } |
-        <cis e>\>_\markup "smorz." \repeat unfold 11 { <cis e> } |
-        \repeat unfold 12 { <a f'> } |
-        \repeat unfold 12 { <a fis'> } |
-        <b g'> <b g'> <b g'> <b g'>\! \repeat unfold 8 { <b g'> } |
-        \repeat unfold 12 { <bes g'> } |
-        \acciaccatura { a16 d } fis2. |
+        a <d f>\p \repeat unfold 10 { <d f> } |
+        <d f>2.:16 |
+        <d f>2.:16 |
+        <d e>2.:16_\markup "smorz." |
+        <cis e>2.:16
+        <a f'>2.:16\> |
+        <a fis'>: |
+        <b g'>:\! |
+        <bes g'>: |
+        \acciaccatura { a16 d } fis2.\pp |
         \acciaccatura { a,16 d } fis2. |
         \acciaccatura { a,16 d } fis2 r4 \bar "|."
 } }
