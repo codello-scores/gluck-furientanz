@@ -3,25 +3,27 @@
 twoside = ##f
 \include "lilylib/pdq.ily"
 
+\include "music/Violin1.ly"
+\addQuote "Violin 1" { \unfoldRepeats \ViolinOneNotes }
 \include "music/Dynamics.ily"
-\include "music/Viola.ly"
+\include "music/Horn1.ly"
 
 \header {
     title = "Furientanz"
     subtitle = "aus der Oper \"Orphée et Eurydice\""
     composer = "C.W. Gluck"
     opus = "Wq.41"
-    instrument = "Viola"
+    instrument = "Horn 1 in F"
     copyright = "© Kim Wittenburg 2019"
 }
 
 \score {
-  \new Staff = "Viola" \with {
-    instrumentName = "Viola"
-    shortInstrumentName = "Vl.2"
+  \new Staff = "Horn 1" \with {
+    instrumentName = "Horn 1"
+    shortInstrumentName = "Cor.1"
   } <<
-    \ViolaNotes
-    \keepWithTag #'Viola \Dynamics
+    \HornOneNotes
+    \keepWithTag #'Horns \Dynamics
   >>
   \layout {
     \partLayout
