@@ -8,5 +8,4 @@ build:
         - make
     artifacts:
         paths:
-            - "Cello.pdf"
-            - "Violin1.pdf"
+            - "*.pdf"
