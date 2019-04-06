@@ -100,7 +100,7 @@ Dynamics = {
   s2.\f |
   s2. |
   \repeat unfold 4 {
-    s8 s-\tag #Strings \tag #'Horns \p s s s s |
+    s8 s-\tag #Strings \p s s s s |
     s2.\f |
     s2. |
   }
