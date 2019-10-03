@@ -4,9 +4,9 @@ OboeOneNotes = \relative c'' {
     \clef treble \key d \minor \time 3/4 | %1
     \tempo "Vivement"
     R1*3/4*8 |
-    \partcombineApart
     \tag #'Part \new CueVoice { \set instrumentCueName = "Vl. 1" }
     \cueDuring "Violin 1" #UP { R1*3/4*2 } |
+    \partcombineApart
     f8 f4 f f8 |
     f2. |
     f8 f4 f f8 |
