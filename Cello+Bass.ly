@@ -4,7 +4,7 @@ twoside = ##f
 \include "lilylib/pdq.ily"
 
 \include "music/Dynamics.ily"
-\include "music/Bass.ly"
+\include "music/Cello+Bass.ly"
 
 \header {
     title = "Furientanz"
@@ -20,7 +20,7 @@ twoside = ##f
     instrumentName = "Violoncello und Bass"
     shortInstrumentName = "Vc./Cb."
   } <<
-    \BassNotes
+    \CelloBassNotes
     \keepWithTag #'Bass \Dynamics
   >>
   \layout {

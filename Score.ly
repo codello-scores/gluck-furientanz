@@ -6,7 +6,7 @@ twoside = ##t
 \include "music/Violin1.ly"
 \include "music/Violin2.ly"
 \include "music/Viola.ly"
-\include "music/Bass.ly"
+\include "music/Cello+Bass.ly"
 \include "music/Oboe1.ly"
 \include "music/Oboe2.ly"
 \include "music/Horn1.ly"
@@ -70,7 +70,7 @@ twoside = ##t
       instrumentName = \markup \right-column { "Violoncello" "und Bass" }
       shortInstrumentName = \markup \right-column { "Vc." "Cb." }
     } <<
-      \BassNotes
+      \CelloBassNotes
       \keepWithTag #'Bass \Dynamics
     >>
   >>

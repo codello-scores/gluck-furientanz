@@ -1,6 +1,6 @@
 \version "2.19.65"
 
-BassNotes = \relative c {
+CelloBassNotes = \relative c {
     \clef bass \key d \minor \time 3/4 | %1
     \tempo "Vivement"
     d4 f d |
@@ -36,7 +36,7 @@ BassNotes = \relative c {
     gis8 e e e e e |
     e2.:8 |
     e8 b'16 c d8 c16 b c8 b16 a |
-    fis8 e e e e e |
+    gis8 e e e e e |
     e2.:8 |
     e: |
     dis8 fis16 gis a8 a16 b c8 b16 a |
