@@ -65,7 +65,7 @@ ViolinOneNotes = \relative c' {
 	}
 	\repeat unfold 2 {
 		a g'' f e d cis bes! a g f e d |
-		cis g bes g bes\sf g bes g bes g bes g |
+		cis a bes a bes\sf a bes a bes a bes a |
 	}
 	\repeat unfold 2 {
 		a a'' g f e d cis bes a g f e |
@@ -74,7 +74,7 @@ ViolinOneNotes = \relative c' {
 	d8-! f'-! d-! f-! a,-! f'-! |
 	d,-! f'-! d-! f-! a,-! f'-! |
 	f,-! g'-! d-! g-! bes,-! g'-! |
-	f,-! g'-! d-! g-! bes,-! g'-! |
+	d,-! g'-! d-! g-! bes,-! g'-! |
 	d,-! f'-! d-! f-! a,-! f'-! |
 	d,-! f'-! d-! f-! a,-! f'-! |
 	a, e'16 f g8 f16 e f8 e16 d |
