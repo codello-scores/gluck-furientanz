@@ -5,7 +5,7 @@ Der Furientanz aus der Oper „Orphée et Eurydice“ (Wq. 41) von Christoph Wil
 ## Noten setzen
 
 ```shell
-make all				 # Alle Stimmen und die Partitur setzen.
+make all         # Alle Stimmen und die Partitur setzen.
 make Score.pdf   # Nur die Partitur setzen.
 make Violin1.pdf # Nur die Stimme für Violine 1 setzen.
 ```
