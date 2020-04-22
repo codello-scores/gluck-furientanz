@@ -16,7 +16,7 @@ all: $(PDF_FILES)
 
 .PHONY: clean
 clean:
-	rm -f *.pdf
+	rm -f *.pdf build/
 
 .PHONY: fonts
 fonts:
