@@ -3,8 +3,8 @@
 twoside = ##f
 \include "pdq/pdq.ily"
 
-\include "music/Dynamics.ily"
-\include "music/Violin1.ly"
+\include "music/dynamics.ily"
+\include "music/violin1.ly"
 
 \header {
     title = "Furientanz"

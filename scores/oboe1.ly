@@ -3,10 +3,10 @@
 twoside = ##f
 \include "pdq/pdq.ily"
 
-\include "music/Violin1.ly"
+\include "music/violin1.ly"
 \addQuote "Violin 1" { \unfoldRepeats \ViolinOneNotes }
-\include "music/Dynamics.ily"
-\include "music/Oboe1.ly"
+\include "music/dynamics.ily"
+\include "music/oboe1.ly"
 
 \header {
     title = "Furientanz"

@@ -3,15 +3,15 @@
 twoside = ##t
 \include "pdq/pdq.ily"
 
-\include "music/Violin1.ly"
-\include "music/Violin2.ly"
-\include "music/Viola.ly"
-\include "music/Cello+Bass.ly"
-\include "music/Oboe1.ly"
-\include "music/Oboe2.ly"
-\include "music/Horn1.ly"
-\include "music/Horn2.ly"
-\include "music/Dynamics.ily"
+\include "music/violin1.ly"
+\include "music/violin2.ly"
+\include "music/viola.ly"
+\include "music/cello+bass.ly"
+\include "music/oboe1.ly"
+\include "music/oboe2.ly"
+\include "music/horn1.ly"
+\include "music/horn2.ly"
+\include "music/dynamics.ily"
 
 
 \header {
@@ -23,11 +23,10 @@ twoside = ##t
     copyright = "© Kim Wittenburg 2019"
 }
 
-\layout {
-    \scoreLayout
-}
-
 \score {
+  \layout {
+    % \scoreLayout
+  }
   \new StaffGroup <<
     \new Staff = "Oboes" \with {
       instrumentName = "Oboen"

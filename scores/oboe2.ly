@@ -3,27 +3,27 @@
 twoside = ##f
 \include "pdq/pdq.ily"
 
-\include "music/Violin1.ly"
+\include "music/violin1.ly"
 \addQuote "Violin 1" { \unfoldRepeats \ViolinOneNotes }
-\include "music/Dynamics.ily"
-\include "music/Horn2.ly"
+\include "music/dynamics.ily"
+\include "music/oboe2.ly"
 
 \header {
     title = "Furientanz"
     subtitle = "aus der Oper \"Orphée et Eurydice\""
     composer = "C.W. Gluck"
     opus = "Wq.41"
-    instrument = "Horn 2 in F"
+    instrument = "Oboe 2"
     copyright = "© Kim Wittenburg 2019"
 }
 
 \score {
-  \new Staff = "Horn 2" \with {
-    instrumentName = "Horn 2"
-    shortInstrumentName = "Cor.2"
+  \new Staff = "Oboe 2" \with {
+    instrumentName = "Oboe 2"
+    shortInstrumentName = "Ob.2"
   } <<
-    \HornTwoNotes
-    \keepWithTag #'Horns \Dynamics
+    \OboeTwoNotes
+    \keepWithTag #'Oboes \Dynamics
   >>
   \layout {
     \partLayout

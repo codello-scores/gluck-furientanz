@@ -3,25 +3,25 @@
 twoside = ##f
 \include "pdq/pdq.ily"
 
-\include "music/Dynamics.ily"
-\include "music/Violin2.ly"
+\include "music/dynamics.ily"
+\include "music/viola.ly"
 
 \header {
     title = "Furientanz"
     subtitle = "aus der Oper \"Orphée et Eurydice\""
     composer = "C.W. Gluck"
     opus = "Wq.41"
-    instrument = "Violine 2"
+    instrument = "Viola"
     copyright = "© Kim Wittenburg 2019"
 }
 
 \score {
-  \new Staff = "Violin 2" \with {
-    instrumentName = "Violine 2"
+  \new Staff = "Viola" \with {
+    instrumentName = "Viola"
     shortInstrumentName = "Vl.2"
   } <<
-    \ViolinTwoNotes
-    \keepWithTag #'Violin2 \Dynamics
+    \ViolaNotes
+    \keepWithTag #'Viola \Dynamics
   >>
   \layout {
     \partLayout
