@@ -1,7 +1,7 @@
-\version "2.19.65"
+\version "2.20.0"
 
 twoside = ##f
-\include "lilylib/pdq.ily"
+\include "pdq/pdq.ily"
 
 \include "music/Dynamics.ily"
 \include "music/Cello+Bass.ly"

@@ -1,7 +1,7 @@
-\version "2.19.65"
+\version "2.20.0"
 
 twoside = ##t
-\include "lilylib/pdq.ily"
+\include "pdq/pdq.ily"
 
 \include "music/Violin1.ly"
 \include "music/Violin2.ly"
