@@ -3,20 +3,21 @@ LILY_OPTIONS=-ddelete-intermediate-files -dno-point-and-click
 
 .SUFFIXES: .ly .ily .pdf .midi
 
-LY_FILES = $(wildcard *.ly)
-PDF_FILES = $(LY_FILES:%.ly=%.pdf)
+LY_FILES = $(wildcard scores/*.ly)
+PDF_FILES = $(LY_FILES:scores/%.ly=build/%.pdf)
 
 .PHONY: all
 all: $(PDF_FILES)
 
-%.pdf %.midi: %.ly
+build/%.pdf %.pdf %.midi: scores/%.ly
 	@echo "========== Compiling" $< "=========="
-	@$(LILY) $(LILY_OPTIONS) $<;
+	mkdir -p $(shell dirname $@)
+	@$(LILY) $(LILY_OPTIONS) --output "$@" $<;
 	@echo ""
 
 .PHONY: clean
 clean:
-	rm -f *.pdf build/
+	rm -rf *.pdf scores/*.pdf build/
 
 .PHONY: fonts
 fonts:
