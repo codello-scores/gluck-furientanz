@@ -14,5 +14,5 @@ Verfügbare Stimmen sind: `Score`, `Violin1`, `Violin2`, `Viola`, `Cello+Bass`, 
 
 ## Schriften installieren
 
-Diese Notenausgabe benutzt das [PDQ](https://github.com/Codello/PDQ) Theme. Zum Kompilieren ist die Yorkten-Schrift erforderlich.
+Diese Notenausgabe benutzt das [PDQ](https://github.com/Codello/pdq) Theme. Zum Kompilieren ist die Yorkten-Schrift erforderlich.
 
